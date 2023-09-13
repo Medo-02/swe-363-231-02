@@ -1,0 +1,13 @@
+/* CSS 1 Exercise 1 */
+body{
+background-color: #352F44;
+color: #B9B4C7;
+}
+
+a {
+    color: #c7b2fc;
+}
+
+a:visited {
+    color: #614f8d;
+}

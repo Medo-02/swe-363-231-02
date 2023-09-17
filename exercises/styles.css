@@ -1,0 +1,26 @@
+/* CSS 2 Exercise 2 */
+th {
+    text-transform: uppercase; 
+}
+
+a {
+    color: green;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+.top{
+    background-color: #EB5406;
+}
+
+em {
+    color: blue;
+}
+
+#the_most_important{
+    text-transform: capitalize;
+    background-color: gold;
+}

@@ -24,3 +24,66 @@ em {
     text-transform: capitalize;
     background-color: gold;
 }
+
+/* CSS 2 Exercise 3 */
+
+h2{
+    font-family: sans-serif;
+}
+
+h1 h2 h3 h3 {
+    text-transform: capitalize;
+}
+
+h2 + p::first-letter {
+    font-size: x-large;
+}
+
+tr:hover {
+    background-color: azure;
+}
+
+li.navitem a {
+    display: inline;
+    text-decoration: none;
+}
+
+.navbar {
+    text-align: center;
+}
+
+li.navitem:first-child a {
+    text-decoration: underline;
+}
+
+th {
+    background-color: #352F44;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(40, 123, 171);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(16, 57, 63);
+}
+
+::selection{
+    background-color: grey;
+}
+
+a:not(li.navitem a) {
+    cursor: pointer;
+}
+
+input {
+    height: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid lightgray;
+}
+
+input[name="Name"] {
+    height: 50px;
+}

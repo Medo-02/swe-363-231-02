@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
-    <title>Games Suggestion</title>
+    <title>اقترح لعبة</title>
 </head>
 <body>
     <!-- HTML 2 Exercise 3 -->
@@ -22,37 +22,36 @@
                         <img src="./Pictures/fries.png" alt="">
                     </div>
                 </li>
-                <li class="navitem"><a href="./index.html">Home</a></li>
-                <li class="navitem"><a href="./Suggest.html">Suggest Game</a></li>
-                <li class="navitem"><a href="./contact.html">contact</a></li>
-                <li class="navitem"><a href="./Suggest-ar.html">Arabic Home page (الصفحة العربية)</a></li>
+                <li class="navitem"><a href="./index-ar.html">الصفحة الرئيسية</a></li>
+                <li class="navitem"><a href="./Suggest-ar.html">اقترح لعبة</a></li>
+                <li class="navitem"><a href="./contact-ar.html">التواصل</a></li>
+                <li class="navitem"><a href="./Suggest.html">الصفحة باللغة الانجليزية (English Page)</a></li>
             </ul>
         </nav>
-        <h1>Games Suggestion Form</h1>
     </header>
     <!-- HTML 2 Exercise 3 -->
     <!-- HTML 2 Exercise 2 game form begin-->
     <section id="SuggestFrom">
         <form action="confirm.html" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required placeholder="اسمك">
             <br>
     
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Your email">
+            <label for="email">الايميل:</label>
+            <input type="email" id="email" name="email" required placeholder="ايميلك">
             <br>
     
-            <label for="platforms">Select the platform:</label>
+            <label for="platforms">اختار منصة:</label>
             <select id="platforms" name="platforms">
-                <option value="PC">PC</option>
-                <option value="XBOX">XBOX</option>
-                <option value="Playstation">Playstation</option>
-                <option value="Nintendo">Nintendo</option>
+                <option value="PC">الكمبيوتر الشخصي</option>
+                <option value="XBOX">الاكسبوكس</option>
+                <option value="Playstation">بلايستيشن</option>
+                <option value="Nintendo">نينتيندو</option>
             </select>
             <br>
     
-            <label for="game">Game name:</label>
-            <input list="games" id="game" type="text" name="game" required placeholder="Full name"></input>
+            <label for="game">اسم اللعبة</label>
+            <input list="games" id="game" type="text" name="game" required placeholder="اسم اللعب الكاملة"></input>
             <datalist id="games">
                 <option value="The Legend of Zelda: Breath of the Wild">
                 <option value="Red Dead Redemption 2">
@@ -76,26 +75,24 @@
             </datalist>
             <br>
 
-            <label for="price">Game price(optional):</label>
+            <label for="price">سعر اللعبة(اختياري):</label>
             <input type="number" id="price" name="price" placeholder="$60">
             <br>
     
-            <label for="played">When you played the game (optional):</label>
+            <label for="played">وقت بدا اللعبة (اختياري):</label>
             <input type="date" id="played" name="played">
             <br>
-            <label for="description">Description(optional):</label>
-            <textarea id="description" name="description" placeholder="Descripe and explain your game"></textarea>
+            <label for="description">وصف(اختياري):</label>
+            <textarea id="description" name="description" placeholder="وصف اللعبة"></textarea>
             <br>
     
-            <input type="submit" value="Submit">
+            <input type="submit" value="ارسال">
         </form>
     </section>
     <!-- HTML 2 Exercise 2 game form end-->
 </body>
 <!-- HTML 2 Exercise 4 -->
 <footer>
-    <p>
-        Copyright 2023 Perserved for mohammed Alzowaid <a href="./index.html">Home page</a> <a target="_blank" href="./contact.html">Contact me</a>   
-    </p>
+    <p>جميع الحقوق محفوظة ل محمد عبدالله الزويد ٢٠٢٣    <a target="_blank" href="./contact-ar.html">تواصل معي</a>   <a href="./index-ar.html">الصفحة الرئيسية</a></p> 
 </footer>
 </html>

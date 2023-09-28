@@ -49,6 +49,10 @@ li.navitem a {
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
     text-align: center;
 }
 
@@ -86,4 +90,60 @@ input[type="text"] {
 
 input[name="Name"] {
     height: 50px;
+}
+
+.footer-items{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* CSS 3 Exercise 3 */
+
+button {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #a996cd;
+}
+
+.burger-icon {
+    height: 48px;
+}
+
+.sub-burger{
+    display: none;
+}
+
+.sub-burger img {
+    display: block;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navitem:hover .sub-burger {
+    display: block;
+}
+
+.navitem:hover .sub-burger img:nth-child(1) {
+    animation: fadeIn 0.5s ease-in-out 0.2s forwards;
+}
+
+.navitem:hover .sub-burger img:nth-child(2) {
+    animation: fadeIn 0.5s ease-in-out 0.4s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

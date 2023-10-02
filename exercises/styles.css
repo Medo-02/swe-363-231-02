@@ -260,7 +260,7 @@ button:hover {
     position: fixed;
     top: 70px;
     right: 5px;
-    width: 80px; 
+    width: 150px; 
     background-color: #7c777750; 
     padding: 20px;
 }
@@ -302,4 +302,13 @@ button:hover {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+}
+
+.travel-container{
+    margin: 2rem;
+}
+
+h5{
+    color: #352F44;
+    background-color: white;
 }

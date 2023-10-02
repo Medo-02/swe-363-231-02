@@ -7,12 +7,16 @@
     <meta name="description" content="Personal website that descripe and hold general information about me.">
     <meta name="keywords" content="personal, kfupm, student">
     <meta name="author" content="Mohammed Alzowaid">
+    <!-- CSS 4 Exercise 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- CSS 1 Exercise 1 -->
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
     <!-- CSS 4 Exercise 4 -->
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
+    
     <title>My personal blog</title>
     <style>
         td {
@@ -209,6 +213,53 @@
     </section>
     <!-- HTML 2 Exercise 2 end -->
     <hr>
+    </section>
+    <!-- CSS 4 Exercise 5 -->
+
+    <section class="travel">
+        <h1>The places that I want to travel to</h1>
+        <br>
+        <div class="travel-container">
+
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Pictures/paris.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Frence, Paris</h5>
+                  <p>Croissant, eiffel tower.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Pictures/Japan.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Japan, Tokyo</h5>
+                  <p>Fuji Mountain.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Pictures/New Orleans.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>United States, New Orleans</h5>
+                  <p>The city that never sleeps!.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
     </section>
     
 </body>

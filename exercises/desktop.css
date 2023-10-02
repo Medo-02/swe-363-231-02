@@ -307,3 +307,16 @@ button:hover {
 h1, h2, h3, p{
     text-align:start;
 }
+
+p{
+    margin: 1rem 2rem;
+}
+
+.travel-container{
+    margin: 2rem 2rem;
+}
+
+h5{
+    color: #352F44;
+    background-color: white;
+}

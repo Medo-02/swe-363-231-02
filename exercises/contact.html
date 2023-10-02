@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
+        <!-- CSS 4 Exercise 4 -->
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
     <title>Contact</title>
 </head>
 <body>
@@ -24,40 +26,44 @@
                 <li class="navitem"><a href="./index.html">Home</a></li>
                 <li class="navitem"><a href="./Suggest.html">Suggest Game</a></li>
                 <li class="navitem"><a href="./contact.html">contact</a></li>
-                <li class="navitem"><a href="./contact-ar.html">Arabic Home page (الصفحة العربية)</a></li>
+                <li class="navitem"><a href="./contact-ar.html">Arabic page (الصفحة العربية)</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>
-            Contact
-        </h1>
-        <form action="./confirm.html" method="post" enctype="text/plain" id="userform">
-            Name:
-            <input type="text" name="Name" placeholder="Your name">
-            <br>
-            Email:
-            <input type="email" name="Email" placeholder="Your email">
-            <br>
-            Message:
-        </form>
-        <textarea name="comment" cols="30" rows="6" placeholder="Write your message"></textarea>
-        <br>
-        <input type="submit" value="send" form="userform">
-    </section>
-
-    <hr>
-    <section id="contact-info">
-        <h2>My information</h2>
-        <h3>
-            <address>
-                Email : <a href="mailto:mohammedalzowaid@gmail.com">Mohammed Alzowaid</a>
+    <div class="container">
+        <section>
+            <h1>
+                Contact
+            </h1>
+            <form action="./confirm.html" method="post" enctype="text/plain" id="userform">
+                Name:
+                <input type="text" name="Name" placeholder="Your name">
                 <br>
-                phone number: <a href="tel:+966541231234">0541231234</a>
-            </address>
-        </h3>
-    </section>
+                Email:
+                <input type="email" name="Email" placeholder="Your email">
+                <br>
+                Message:
+            </form>
+            <textarea name="comment" cols="30" rows="6" placeholder="Write your message"></textarea>
+            <br>
+            <input type="submit" value="send" form="userform">
+        </section>
+    </div>
+    <hr>
+    <div class="container">
+        <section id="contact-info">
+            <h2>My information</h2>
+            <h3>
+                <address>
+                    Email : <a href="mailto:mohammedalzowaid@gmail.com">Mohammed Alzowaid</a>
+                    <br>
+                    phone number: <a href="tel:+966541231234">0541231234</a>
+                </address>
+            </h3>
+        </section>    
+    </div>
 
+   
 </body>
 
 <footer>

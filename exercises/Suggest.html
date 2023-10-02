@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
+        <!-- CSS 4 Exercise 4 -->
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
     <title>Games Suggestion</title>
 </head>
 <body>
@@ -25,71 +27,74 @@
                 <li class="navitem"><a href="./index.html">Home</a></li>
                 <li class="navitem"><a href="./Suggest.html">Suggest Game</a></li>
                 <li class="navitem"><a href="./contact.html">contact</a></li>
-                <li class="navitem"><a href="./Suggest-ar.html">Arabic Home page (الصفحة العربية)</a></li>
+                <li class="navitem"><a href="./Suggest-ar.html">Arabic page (الصفحة العربية)</a></li>
             </ul>
         </nav>
         <h1>Games Suggestion Form</h1>
     </header>
     <!-- HTML 2 Exercise 3 -->
     <!-- HTML 2 Exercise 2 game form begin-->
-    <section id="SuggestFrom">
-        <form action="confirm.html" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
-            <br>
+    <div class="container">
+        <section id="SuggestFrom">
+            <form action="confirm.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+                <br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+                <br>
+        
+                <label for="platforms">Select the platform:</label>
+                <select id="platforms" name="platforms">
+                    <option value="PC">PC</option>
+                    <option value="XBOX">XBOX</option>
+                    <option value="Playstation">Playstation</option>
+                    <option value="Nintendo">Nintendo</option>
+                </select>
+                <br>
+        
+                <label for="game">Game name:</label>
+                <input list="games" id="game" type="text" name="game" required placeholder="Full name"></input>
+                <datalist id="games">
+                    <option value="The Legend of Zelda: Breath of the Wild">
+                    <option value="Red Dead Redemption 2">
+                    <option value="The Witcher 3: Wild Hunt">
+                    <option value="Minecraft">
+                    <option value="Fortnite">
+                    <option value="Grand Theft Auto V">
+                    <option value="Overwatch">
+                    <option value="Call of Duty: Warzone">
+                    <option value="Among Us">
+                    <option value="Cyberpunk 2077">
+                    <option value="Apex Legends">
+                    <option value="Rocket League">
+                    <option value="Animal Crossing: New Horizons">
+                    <option value="FIFA 22">
+                    <option value="Halo Infinite">
+                    <option value="Assassin's Creed Valhalla">
+                    <option value="Doom Eternal">
+                    <option value="The Elder Scrolls V: Skyrim">
+                    <option value="Among Us">
+                </datalist>
+                <br>
     
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Your email">
-            <br>
+                <label for="price">Game price(optional):</label>
+                <input type="number" id="price" name="price" placeholder="$60">
+                <br>
+        
+                <label for="played">When you played the game (optional):</label>
+                <input type="date" id="played" name="played">
+                <br>
+                <label for="description">Description(optional):</label>
+                <textarea id="description" name="description" placeholder="Descripe and explain your game"></textarea>
+                <br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
     
-            <label for="platforms">Select the platform:</label>
-            <select id="platforms" name="platforms">
-                <option value="PC">PC</option>
-                <option value="XBOX">XBOX</option>
-                <option value="Playstation">Playstation</option>
-                <option value="Nintendo">Nintendo</option>
-            </select>
-            <br>
-    
-            <label for="game">Game name:</label>
-            <input list="games" id="game" type="text" name="game" required placeholder="Full name"></input>
-            <datalist id="games">
-                <option value="The Legend of Zelda: Breath of the Wild">
-                <option value="Red Dead Redemption 2">
-                <option value="The Witcher 3: Wild Hunt">
-                <option value="Minecraft">
-                <option value="Fortnite">
-                <option value="Grand Theft Auto V">
-                <option value="Overwatch">
-                <option value="Call of Duty: Warzone">
-                <option value="Among Us">
-                <option value="Cyberpunk 2077">
-                <option value="Apex Legends">
-                <option value="Rocket League">
-                <option value="Animal Crossing: New Horizons">
-                <option value="FIFA 22">
-                <option value="Halo Infinite">
-                <option value="Assassin's Creed Valhalla">
-                <option value="Doom Eternal">
-                <option value="The Elder Scrolls V: Skyrim">
-                <option value="Among Us">
-            </datalist>
-            <br>
-
-            <label for="price">Game price(optional):</label>
-            <input type="number" id="price" name="price" placeholder="$60">
-            <br>
-    
-            <label for="played">When you played the game (optional):</label>
-            <input type="date" id="played" name="played">
-            <br>
-            <label for="description">Description(optional):</label>
-            <textarea id="description" name="description" placeholder="Descripe and explain your game"></textarea>
-            <br>
-    
-            <input type="submit" value="Submit">
-        </form>
-    </section>
     <!-- HTML 2 Exercise 2 game form end-->
 </body>
 <!-- HTML 2 Exercise 4 -->

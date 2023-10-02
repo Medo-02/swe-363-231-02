@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
+        <!-- CSS 4 Exercise 4 -->
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
     <title>التواصل</title>
 </head>
 <body>
@@ -28,35 +30,40 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>
-            التواصل
-        </h1>
-        <form action="./confirm.html" method="post" enctype="text/plain" id="userform">
-            الاسم:
-            <input type="text" name="Name" placeholder="اكتب اسمك هنا">
-            <br>
-            الايميل:
-            <input type="email" name="Email" placeholder="اكتب ايميلك">
-            <br>
-            رسالة:
-        </form>
-        <textarea name="comment" cols="30" rows="6" placeholder="اكتب رسالتك"></textarea>
-        <br>
-        <input type="submit" value="ارسل" form="userform">
-    </section>
-
-    <hr>
-    <section id="contact-info">
-        <h2>معلومات التواصل</h2>
-        <h3>
-            <address>
-                الايميل : <a href="mailto:mohammedalzowaid@gmail.com">محمد الزويد</a>
+    <div class="container">
+        <section>
+            <h1>
+                التواصل
+            </h1>
+            <form action="./confirm.html" method="post" enctype="text/plain" id="userform">
+                الاسم:
+                <input type="text" name="Name" placeholder="اكتب اسمك هنا">
                 <br>
-                رقم الهاتف: <a href="tel:+966541231234">0541231234</a>
-            </address>
-        </h3>
-    </section>
+                الايميل:
+                <input type="email" name="Email" placeholder="اكتب ايميلك">
+                <br>
+                رسالة:
+            </form>
+            <textarea name="comment" cols="30" rows="6" placeholder="اكتب رسالتك"></textarea>
+            <br>
+            <input type="submit" value="ارسل" form="userform">
+        </section>
+    </div>
+    
+    <hr>
+
+    <div class="container">
+        <section id="contact-info">
+            <h2>معلومات التواصل</h2>
+            <h3>
+                <address>
+                    الايميل : <a href="mailto:mohammedalzowaid@gmail.com">محمد الزويد</a>
+                    <br>
+                    رقم الهاتف: <a href="tel:+966541231234">0541231234</a>
+                </address>
+            </h3>
+        </section>
+    </div>
 
 </body>
 

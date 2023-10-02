@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./dark_theme.css">
     <!-- CSS 2 Exercise 2 -->
     <link rel="stylesheet" href="./styles.css">
+        <!-- CSS 4 Exercise 4 -->
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
     <title>اقترح لعبة</title>
 </head>
 <body>
@@ -31,64 +33,68 @@
     </header>
     <!-- HTML 2 Exercise 3 -->
     <!-- HTML 2 Exercise 2 game form begin-->
-    <section id="SuggestFrom">
-        <form action="confirm.html" method="post">
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required placeholder="اسمك">
-            <br>
-    
-            <label for="email">الايميل:</label>
-            <input type="email" id="email" name="email" required placeholder="ايميلك">
-            <br>
-    
-            <label for="platforms">اختار منصة:</label>
-            <select id="platforms" name="platforms">
-                <option value="PC">الكمبيوتر الشخصي</option>
-                <option value="XBOX">الاكسبوكس</option>
-                <option value="Playstation">بلايستيشن</option>
-                <option value="Nintendo">نينتيندو</option>
-            </select>
-            <br>
-    
-            <label for="game">اسم اللعبة</label>
-            <input list="games" id="game" type="text" name="game" required placeholder="اسم اللعب الكاملة"></input>
-            <datalist id="games">
-                <option value="The Legend of Zelda: Breath of the Wild">
-                <option value="Red Dead Redemption 2">
-                <option value="The Witcher 3: Wild Hunt">
-                <option value="Minecraft">
-                <option value="Fortnite">
-                <option value="Grand Theft Auto V">
-                <option value="Overwatch">
-                <option value="Call of Duty: Warzone">
-                <option value="Among Us">
-                <option value="Cyberpunk 2077">
-                <option value="Apex Legends">
-                <option value="Rocket League">
-                <option value="Animal Crossing: New Horizons">
-                <option value="FIFA 22">
-                <option value="Halo Infinite">
-                <option value="Assassin's Creed Valhalla">
-                <option value="Doom Eternal">
-                <option value="The Elder Scrolls V: Skyrim">
-                <option value="Among Us">
-            </datalist>
-            <br>
 
-            <label for="price">سعر اللعبة(اختياري):</label>
-            <input type="number" id="price" name="price" placeholder="$60">
-            <br>
+    <div class="container">
+        <section id="SuggestFrom">
+            <form action="confirm.html" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required placeholder="اسمك">
+                <br>
+        
+                <label for="email">الايميل:</label>
+                <input type="email" id="email" name="email" required placeholder="ايميلك">
+                <br>
+        
+                <label for="platforms">اختار منصة:</label>
+                <select id="platforms" name="platforms">
+                    <option value="PC">الكمبيوتر الشخصي</option>
+                    <option value="XBOX">الاكسبوكس</option>
+                    <option value="Playstation">بلايستيشن</option>
+                    <option value="Nintendo">نينتيندو</option>
+                </select>
+                <br>
+        
+                <label for="game">اسم اللعبة</label>
+                <input list="games" id="game" type="text" name="game" required placeholder="اسم اللعب الكاملة"></input>
+                <datalist id="games">
+                    <option value="The Legend of Zelda: Breath of the Wild">
+                    <option value="Red Dead Redemption 2">
+                    <option value="The Witcher 3: Wild Hunt">
+                    <option value="Minecraft">
+                    <option value="Fortnite">
+                    <option value="Grand Theft Auto V">
+                    <option value="Overwatch">
+                    <option value="Call of Duty: Warzone">
+                    <option value="Among Us">
+                    <option value="Cyberpunk 2077">
+                    <option value="Apex Legends">
+                    <option value="Rocket League">
+                    <option value="Animal Crossing: New Horizons">
+                    <option value="FIFA 22">
+                    <option value="Halo Infinite">
+                    <option value="Assassin's Creed Valhalla">
+                    <option value="Doom Eternal">
+                    <option value="The Elder Scrolls V: Skyrim">
+                    <option value="Among Us">
+                </datalist>
+                <br>
     
-            <label for="played">وقت بدا اللعبة (اختياري):</label>
-            <input type="date" id="played" name="played">
-            <br>
-            <label for="description">وصف(اختياري):</label>
-            <textarea id="description" name="description" placeholder="وصف اللعبة"></textarea>
-            <br>
-    
-            <input type="submit" value="ارسال">
-        </form>
-    </section>
+                <label for="price">سعر اللعبة(اختياري):</label>
+                <input type="number" id="price" name="price" placeholder="$60">
+                <br>
+        
+                <label for="played">وقت بدا اللعبة (اختياري):</label>
+                <input type="date" id="played" name="played">
+                <br>
+                <label for="description">وصف(اختياري):</label>
+                <textarea id="description" name="description" placeholder="وصف اللعبة"></textarea>
+                <br>
+        
+                <input type="submit" value="ارسال">
+            </form>
+        </section>
+    </div>
+
     <!-- HTML 2 Exercise 2 game form end-->
 </body>
 <!-- HTML 2 Exercise 4 -->

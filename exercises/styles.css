@@ -104,7 +104,7 @@ input[name="Name"] {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin: 0 25rem;
+    margin: 0 2rem;
 }
 
 .blog-game h1 {
@@ -143,6 +143,7 @@ input[name="Name"] {
     height: 250px;
     width: 500px;
 }
+
 
 /* CSS 3 Exercise 3 */
 
@@ -257,9 +258,9 @@ button:hover {
 .sidebar{
     margin: 10px;
     position: fixed;
-    top: 0;
+    top: 70px;
     right: 5px;
-    width: 300px; 
+    width: 80px; 
     background-color: #7c777750; 
     padding: 20px;
 }
@@ -279,4 +280,26 @@ button:hover {
 .game-title .date{
     margin-top: 30px;
     margin-bottom: 0;
+}
+
+
+
+  /* CSS 4 Exercise 3 */
+
+  h1, h2, p{
+    text-align: center;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;    
+}
+
+.container-game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }

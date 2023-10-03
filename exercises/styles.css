@@ -312,3 +312,9 @@ h5{
     color: #352F44;
     background-color: white;
 }
+
+.btn-xl {
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}

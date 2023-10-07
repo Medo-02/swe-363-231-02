@@ -48,10 +48,35 @@
             height: 50px;
             background-color: red;;
         }
+
+        /* JS 2 Exercise 2 */
+        .sidebar{
+        margin: 10px;
+        position: fixed;
+        top: 70px;
+        right: 5px;
+        width: 150px; 
+        background-color: #7c777750; 
+        padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                margin-top: 20px;
+                width: auto;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- JS 2 Exercise 2 -->
+    <div class="sidebar">
+        <h3>How to play</h3>
+        <p>Using mouse: click on empty squares</p>
+        <p>Using Keyboard: Use numbers from 1 to 9 to select squares. Press "R" to restart</p>
+    </div>
     <h1 id="turn">
         Now it's is <span>X</span> turn
     </h1>
@@ -166,6 +191,34 @@
                 }
             }
             return -1;
+        }
+        // JS 2 Exercise 2
+        //The game is played using the keyboard numbers from 1-9
+        document.addEventListener('keydown', keyPress);
+
+        function keyPress(event) {
+            // Restart game if "R" is pressed
+            if(event.key === 'r' || event.key === 'R'){
+                btnClicked();
+            }
+            else if (!won) {
+
+                const key = event.key;
+                if (key >= '1' && key <= '9') {
+                    //subtract 1 to map the key to cell index
+                    const index = parseInt(key) - 1;
+                    const cell = document.querySelectorAll('.cell')[index];
+                    if (cell.innerText === "") {
+                        cell.innerText = turn;
+                        gameModel[index] = turn;
+
+                        cell.style.backgroundColor = "#a996cdd6";
+                        turn = turn === "X" ? "O" : "X";
+                        // Update title
+                        updateHeader();
+                    }
+                }
+            }
         }
         
 

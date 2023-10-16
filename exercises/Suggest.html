@@ -11,6 +11,24 @@
         <!-- CSS 4 Exercise 4 -->
         <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 770px)">
     <title>Games Suggestion</title>
+    <style>
+        header {
+            padding-bottom: 2.5rem;
+        }
+
+        footer {
+            padding-top: 5rem;
+        }
+        .signature-container{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            position: relative;
+            background: #fff;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
 </head>
 <body>
     <!-- HTML 2 Exercise 3 -->
@@ -90,16 +108,67 @@
                 <textarea id="description" name="description" placeholder="Descripe and explain your game"></textarea>
                 <br>
         
+                <!-- JS 3 Exercise 2 -->
+                <label for="signature">Signature</label>
+                <div class="signature-container">
+                    <canvas id="signature" width="300" height="150"></canvas>
+                    <button id="clear">Clear</button>
+                </div>
+                <input type="hidden" id="signature-image" name="signature" required>
+                <br>
                 <input type="submit" value="Submit">
             </form>
         </section>
     </div>
     
     <!-- HTML 2 Exercise 2 game form end-->
+    <script>
+        // Selecting the signture elemenets
+        const canvas = document.getElementById("signature");
+        const clearButton = document.getElementById("clear");
+        const signatureInput = document.getElementById("signature-image");
+        const context = canvas.getContext("2d");
+        //Specify the signture line proprities
+        let isdrawing = false;
+        context.lineWidth = 2;
+        context.lineCap = "round";
+        context.lineJoin = "round";
+        context.strokeStyle = "#000";
+        //Detect mouse signature
+        canvas.addEventListener("mousedown", () => {
+            isdrawing = true;
+            context.beginPath();
+        });
+        canvas.addEventListener("mouseup", () => {
+            isdrawing = false;
+            const signImage = canvas.toDataURL("image/png");
+            signatureInput.value = signatureImage;
+        });
+        canvas.addEventListener("mousemove", draw);
+        clearButton.addEventListener("click", () => {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            signatureInput.value = "";
+        });
+        //track the mouse drawing
+        function draw(e){
+            if (!isdrawing){
+                return;
+            }
+            context.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            context.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            context.stroke();
+        }
+
+
+    </script>
 </body>
 <!-- HTML 2 Exercise 4 -->
 <footer>
     <p>
+
+
+
+
         Copyright 2023 Perserved for mohammed Alzowaid <a href="./index.html">Home page</a> <a target="_blank" href="./contact.html">Contact me</a>   
     </p>
 </footer>

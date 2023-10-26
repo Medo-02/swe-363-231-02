@@ -106,11 +106,11 @@ const gameData = [
   //JS 4 Exercise 2 part 1,3 creating arrow syntax and IIFE function
   const addBlogGamesToWebsite = () => {
     const container = document.querySelector(".container-game");
-  
-    for (const gameData of gamesData) {
-      const blogGameElement = gameElement(gameData);
+    //JS 4 Exercise 3 use map to generate from each game of the game data a blog game element
+    gameData.map((game) => {
+      const blogGameElement = gameElement(game);
       container.appendChild(blogGameElement);
-    }
+    });
   }
   
   addBlogGamesToWebsite();

@@ -1,3 +1,51 @@
+//JS 4 Exercise 1
+class Game {
+  constructor(title, date, developer, devUrl, gameUrl, description){
+    this.title = title;
+    this.date = date;
+    this.developer = developer;
+    this.devUrl = devUrl;
+    this.gameUrl = gameUrl;
+    this.description = description;
+  }
+}
+
+const gameData = [
+  new Game(
+    "Resident Evil 7",
+    "January 24, 2017",
+    "Capcom",
+    "./Pictures/capcom.png",
+    "./Pictures/resident.jpeg",
+    "In Resident Evil 7, Ethan Winters receives a mysterious message from his wife Mia..."
+  ),
+  new Game(
+    "Bioshock Infinite",
+    "March 26, 2013",
+    "Irrational Games",
+    "./Pictures/irrational.jpeg",
+    "./Pictures/bioshock.jpeg",
+    "In 1912, Booker DeWitt is taken by the mysterious Lutece Twins to an island lighthouse..."
+  ),
+  new Game(
+    "The Witcher 3",
+    "May 18, 2015",
+    "CD Projekt Red",
+    "./Pictures/CD_Projekt_logo.svg.png",
+    "./Pictures/witcher 3.png",
+    "The game takes place in a fictional fantasy world based on Slavic mythology..."
+  ),
+  new Game(
+    "Fallout 4",
+    "November 10, 2015",
+    "Bethesda",
+    "./Pictures/bethesda.jpeg",
+    "./Pictures/fallout 4.jpeg",
+    "Fallout 4 is an open-world role-playing game developed by Bethesda Game Studios..."
+  )
+]
+//JS 4 Exercise 1 end
+
 // JS 2 Exercise 1
 
 const gamesData = 

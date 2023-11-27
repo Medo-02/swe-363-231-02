@@ -1,46 +1,28 @@
 const express = require('express');
 const path = require('path');
-
+const routes = require('./router');
 const app = express();
 
 app.use(express.static(path.join(__dirname)));
 
 // Define routes
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
+app.get('/', routes);
 
-app.get('/index-ar', (req, res) => {
-    res.sendFile(__dirname + '/index-ar.html');
-});
+app.get('/index-ar', routes);
 
-app.get('/Suggest', (req, res) => {
-    res.sendFile(__dirname + '/Suggest.html');
-});
+app.get('/Suggest', routes);
 
-app.get('/Suggest-ar', (req, res) => {
-    res.sendFile(__dirname + '/Suggest-ar.html');
-});
+app.get('/Suggest-ar', routes);
 
-app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/contact.html');
-});
+app.get('/contact', routes);
 
-app.get('/contact-ar', (req, res) => {
-    res.sendFile(__dirname + '/contact-ar.html');
-});
+app.get('/contact-ar', routes);
 
-app.get('/confirm', (req, res) => {
-    res.sendFile(__dirname + '/confirm.html');
-});
+app.get('/confirm', routes);
 
-app.get('/confirm-ar', (req, res) => {
-    res.sendFile(__dirname + '/confirm-ar.html');
-});
+app.get('/confirm-ar', routes);
 
-app.get('/cat-fact', (req, res) => {
-    res.sendFile(__dirname + '/cat-fact.html');
-});
+app.get('/cat-fact', routes);
 
 
 // Start the server

@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const routes = require('./router');
 const app = express();
+const bodyParser = require('body-parser');
 
 app.use(express.static(path.join(__dirname)));
 
@@ -24,6 +25,14 @@ app.get('/confirm-ar', routes);
 
 app.get('/cat-fact', routes);
 
+// Use bodyParser middleware 
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/processForm', (req, res) => {
+    console.log('Form data:', req.body);
+    //redirect user to confirm page that indicate his message was received
+    res.redirect('/confirm.html');
+});
 
 // Start the server
 const port = 3000;
